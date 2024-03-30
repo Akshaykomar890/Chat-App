@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/firstLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_300sdp"
+                android:src="@drawable/welcome_screen"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="343dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_gravity="center"
+                android:text="@string/welcome_screen1"
+                android:textSize="@dimen/_20ssp"
+                android:textAlignment="center"
+                android:textColor="#1F41BB"/>
+            <TextView
+                android:layout_width="323dp"
+                android:layout_height="42dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/welcome_screen2"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_88sdp"
+            android:layout_below="@id/firstLayout">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/welcomeLoginButton"
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="@dimen/_50sdp"
+                app:cornerRadius="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:text="Login"
+                android:textSize="@dimen/_15ssp"
+                android:fontFamily="@font/poppins_semibold"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/welcomeRegisterButton"
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="@dimen/_50sdp"
+                app:cornerRadius="@dimen/_10sdp"
+                android:backgroundTint="#ECECEC"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:text="Register"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15ssp"
+                android:fontFamily="@font/poppins_semibold"/>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>

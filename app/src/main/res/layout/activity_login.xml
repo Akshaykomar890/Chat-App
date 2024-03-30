@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/white">
+    <LinearLayout
+        android:id="@+id/firstLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_40sdp">
+
+        <TextView
+            android:id="@+id/loginhere"
+            android:layout_width="@dimen/_167sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/login"
+            android:textAlignment="center"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_25ssp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome back you’ve\nbeen missed!"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10ssp"
+            android:fontFamily="@font/poppins_semibold"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="@dimen/_60sdp"
+            android:layout_width="@dimen/_270sdp"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:layout_gravity="center"
+            app:endIconMode="clear_text"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusBottomEnd="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailInputLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="@dimen/_270sdp"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:layout_gravity="center"
+            app:endIconMode="password_toggle"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusBottomEnd="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordInputLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/signInButton"
+            android:layout_width="@dimen/_270sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_40sdp"
+            app:cornerRadius="@dimen/_10sdp"
+            android:text="Sign in"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="@dimen/_15sdp"/>
+        <TextView
+            android:layout_width="@dimen/_300sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Create new account"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp"
+            tools:ignore="TextSizeCheck" />
+        <TextView
+            android:layout_width="@dimen/_300sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Or continue with"
+            android:textAlignment="center"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_10sdp"
+            tools:ignore="TextSizeCheck" />
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_335sdp"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/blue"
+        android:indeterminateTintMode="src_atop"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstLayout"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <com.google.android.material.button.MaterialButton
+            style="?attr/materialIconButtonFilledTonalStyle"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:backgroundTint="#ECECEC"
+            app:cornerRadius="@dimen/_10sdp"
+            app:icon="@drawable/google"
+            app:iconGravity="textStart"
+            app:iconSize="@dimen/_20sdp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <com.google.android.material.button.MaterialButton
+            style="?attr/materialIconButtonFilledTonalStyle"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:backgroundTint="#ECECEC"
+            app:cornerRadius="@dimen/_10sdp"
+            app:icon="@drawable/facebook"
+            app:iconGravity="textStart"
+            app:iconSize="@dimen/_20sdp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <com.google.android.material.button.MaterialButton
+            style="?attr/materialIconButtonFilledTonalStyle"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:backgroundTint="#ECECEC"
+            app:cornerRadius="@dimen/_10sdp"
+            app:icon="@drawable/apple"
+            app:iconGravity="textStart"
+            app:iconSize="@dimen/_20sdp"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+</RelativeLayout>
