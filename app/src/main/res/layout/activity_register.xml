@@ -35,7 +35,7 @@
             android:layout_marginTop="@dimen/_30sdp"
             android:layout_width="@dimen/_270sdp"
             android:layout_height="wrap_content"
-            android:hint="Email"
+            android:hint="Name"
             android:layout_gravity="center"
             app:endIconMode="clear_text"
             app:boxCornerRadiusTopStart="10dp"
@@ -43,7 +43,7 @@
             app:boxCornerRadiusBottomStart="10dp"
             app:boxCornerRadiusBottomEnd="10dp">
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/emailInputRegister"
+                android:id="@+id/nameInputRegister"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
         </com.google.android.material.textfield.TextInputLayout>

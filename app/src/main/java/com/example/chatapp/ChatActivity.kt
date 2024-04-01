@@ -45,4 +45,10 @@ class ChatActivity :AppCompatActivity() {
             .commit()
     }
 
+    @Deprecated("Deprecated in Java")
+    override fun onBackPressed() {
+        super.onBackPressed()
+        finish()
+    }
+
 }

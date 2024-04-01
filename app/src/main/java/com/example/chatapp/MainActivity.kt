@@ -13,12 +13,9 @@ class MainActivity : AppCompatActivity() {
         binding = WelcomeScreen1Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
-        binding.welcomeLoginButton.setOnClickListener {
-            startActivity(Intent(this@MainActivity,LoginActivity::class.java))
-        }
         binding.welcomeRegisterButton.setOnClickListener {
             startActivity(Intent(this@MainActivity,RegisterActivity::class.java))
         }
+
     }
 }

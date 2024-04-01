@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        android:background="?android:attr/selectableItemBackground">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+        <ImageView
+            android:id="@+id/chatImage"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@drawable/google"
+            android:layout_marginStart="@dimen/_16sdp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_gravity="center_vertical">
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/chatNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Akshay"
+                android:textSize="16sp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_semibold"/>
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/chatMessageText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="04:10"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:textColor="@color/black"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:textSize="14sp"/>
+
+</RelativeLayout>
