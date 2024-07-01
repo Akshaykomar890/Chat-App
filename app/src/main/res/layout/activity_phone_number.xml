@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PhoneNumberActivity"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/number_design"/>
+    <ImageView
+        android:id="@+id/phone_img"
+        android:layout_width="@dimen/phoneImg_width"
+        android:layout_height="@dimen/phoneImg_width"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/phone_number"
+        android:layout_marginTop="10dp"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toBottomOf="@id/phone_img"
+        android:text="@string/enter_phoneNumber"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/textPhoneNumber"
+        app:layout_constraintTop_toBottomOf="@id/textPhoneNumber"
+        android:text="@string/phoneNumber_Desc"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phoneNumber_input"
+        android:layout_width="@dimen/numberInput_width"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/phone_img"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="120dp"
+        app:errorEnabled="true"
+        android:hint="Phone number"
+        app:layout_constraintEnd_toEndOf="parent">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/number_Input"
+            android:maxLength="10"
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:layout_height="match_parent" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_phoneNumber"
+        android:layout_width="@dimen/numberInput_width"
+        android:layout_height="@dimen/phoneImg_height"
+        android:layout_marginTop="50dp"
+        android:text="Continue"
+        app:cornerRadius="10dp"
+        app:elevation="30dp"
+        android:fontFamily="@font/inter_semibold"
+        app:layout_constraintEnd_toEndOf="@id/phoneNumber_input"
+        app:layout_constraintStart_toStartOf="@id/phoneNumber_input"
+        app:layout_constraintTop_toBottomOf="@id/phoneNumber_input" />
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/progress_bar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/btn_phoneNumber"
+        app:layout_constraintEnd_toEndOf="@id/btn_phoneNumber"
+        app:layout_constraintTop_toBottomOf="@id/btn_phoneNumber"
+        app:indicatorColor="@color/black"
+        android:visibility="invisible"
+        android:indeterminate="true" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

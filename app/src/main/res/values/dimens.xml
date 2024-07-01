@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="app_bar_height">60dp</dimen>
+    <dimen name="phoneImg_width">300dp</dimen>
+    <dimen name="numberInput_width">350dp</dimen>
+    <dimen name="phoneImg_height">57dp</dimen>
+    <dimen name="box_width">64dp</dimen>
+</resources>

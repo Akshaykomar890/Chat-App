@@ -13,16 +13,16 @@
         android:theme="@style/Theme.ChatApp"
         tools:targetApi="31">
         <activity
-            android:name=".MessageActivity"
+            android:name=".activity.ProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".SplashScreen"
-            android:exported="false"></activity>
-        <activity
-            android:name=".PhoneNumberOtpActivity"
+            android:name=".activity.OtpActivity"
             android:exported="false" />
         <activity
-            android:name=".ChatActivity"
+            android:name=".activity.PhoneNumberActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SplashScreeen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,11 +31,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".RegisterActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="false"></activity>
+            android:name=".activity.MainActivity"
+            android:exported="true" />
 
         <meta-data
             android:name="preloaded_fonts"

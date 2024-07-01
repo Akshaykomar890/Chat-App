@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.chatapp"
-        minSdk = 23
+        minSdk = 30
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -52,10 +52,6 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
-    //sdp ssp
-    implementation ("com.intuit.sdp:sdp-android:1.1.0")
-    implementation ("com.intuit.ssp:ssp-android:1.1.0")
-
     //phonenumer
     implementation ("com.fredporciuncula:phonemoji:1.5.2")
 
@@ -63,6 +59,17 @@ dependencies {
     implementation ("com.airbnb.android:lottie:6.4.0")
 
     implementation(platform("com.google.firebase:firebase-bom:32.8.0"))
+
+    //Coil
+    implementation("io.coil-kt:coil:2.6.0")
+
+    //Circle
+    implementation ("de.hdodenhof:circleimageview:3.1.0")
+
+    //country code picker
+    implementation ("com.hbb20:ccp:2.7.3")
+
+
 
 
 

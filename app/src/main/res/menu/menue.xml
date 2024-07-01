@@ -5,10 +5,15 @@
         android:id="@+id/chatMenue"
         android:title="Chats"
         android:enabled="true"
-        android:icon="@drawable/menue_home_selector"/>
+        android:icon="@drawable/menue_chat_selector"/>
     <item
-        android:id="@+id/profileMenue"
-        android:title="Profile"
+        android:id="@+id/statusMenue"
+        android:title="Status"
         android:enabled="true"
-        android:icon="@drawable/menue_profile_selector"/>
+        android:icon="@drawable/menue_status_selector"/>
+    <item
+        android:id="@+id/callMenue"
+        android:title="Call"
+        android:enabled="true"
+        android:icon="@drawable/menue_call_selector"/>
 </menu>

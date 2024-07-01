@@ -6,4 +6,12 @@
     <string name="search">Search</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="whatsup">WhatsApp</string>
+    <string name="bottom_msg">From <b>Akshay</b></string>
+    <string name="phoneNumber_Desc">Please confirm your country code and\nenter your phone number.</string>
+    <string name="enter_phoneNumber">Enter your Phone Number</string>
+    <string name="verify_phoneNumber">Verify your\nphone number</string>
+    <string name="verify_DescPhoneNumber">"We’ve sent an SMS with an\nactivation code to your phone "</string>
+
+    <dimen name="splash_img_width">100dp</dimen>
 </resources>
