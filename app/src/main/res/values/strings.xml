@@ -12,6 +12,8 @@
     <string name="enter_phoneNumber">Enter your Phone Number</string>
     <string name="verify_phoneNumber">Verify your\nphone number</string>
     <string name="verify_DescPhoneNumber">"We’ve sent an SMS with an\nactivation code to your phone "</string>
+    <string name="Profile">Profile Info</string>
+    <string name="profileDesc">Please provide your name and\nOptional profile photo</string>
 
     <dimen name="splash_img_width">100dp</dimen>
 </resources>

@@ -28,7 +28,7 @@ class PhoneNumberActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
 
         if (auth.currentUser!=null){
-            startActivity(Intent(this@PhoneNumberActivity,MainActivity::class.java))
+            startActivity(Intent(this@PhoneNumberActivity,ProfileActivity::class.java))
             finish()
         }
 
@@ -79,7 +79,7 @@ class PhoneNumberActivity : AppCompatActivity() {
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     // Sign in success, update UI with the signed-in user's information
-                    startActivity(Intent(this@PhoneNumberActivity,MainActivity::class.java))
+                    startActivity(Intent(this@PhoneNumberActivity,ProfileActivity::class.java))
                     finish()
                     val user = task.result?.user
                 } else {

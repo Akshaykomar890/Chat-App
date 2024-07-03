@@ -55,7 +55,7 @@ class OtpActivity : AppCompatActivity() {
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     // Sign in success, update UI with the signed-in user's information
-                    startActivity(Intent(this@OtpActivity, MainActivity::class.java))
+                    startActivity(Intent(this@OtpActivity, ProfileActivity::class.java))
                     finish()
                     val user = task.result?.user
                 } else {
