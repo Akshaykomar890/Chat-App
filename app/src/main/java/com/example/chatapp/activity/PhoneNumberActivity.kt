@@ -28,7 +28,7 @@ class PhoneNumberActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
 
         if (auth.currentUser!=null){
-            startActivity(Intent(this@PhoneNumberActivity,ProfileActivity::class.java))
+            startActivity(Intent(this@PhoneNumberActivity,MainActivity::class.java))
             finish()
         }
 

@@ -7,4 +7,9 @@
     <dimen name="box_width">64dp</dimen>
     <dimen name="circleImg">120dp</dimen>
     <dimen name="profileVerify">120dp</dimen>
+    <dimen name="chat_img_width">56dp</dimen>
+    <dimen name="chat_input_height">54dp</dimen>
+    <dimen name="send_button">54dp</dimen>
+    <dimen name="card_width">163dp</dimen>
+    <dimen name="card_height">44dp</dimen>
 </resources>

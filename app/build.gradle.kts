@@ -68,6 +68,9 @@ dependencies {
     //country code picker
     implementation ("com.hbb20:ccp:2.7.3")
 
+    //glide
+    implementation ("com.github.bumptech.glide:glide:4.16.0")
+
 
 
 

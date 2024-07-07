@@ -12,7 +12,7 @@
 
 
     <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
-        <item name="android:color">#BEC9C7</item>
+        <item name="android:color">#D3E4FF</item>
     </style>
 
 

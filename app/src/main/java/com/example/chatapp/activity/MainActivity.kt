@@ -12,9 +12,9 @@ import com.example.chatapp.fragments.StatusFragment
 import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity:AppCompatActivity(){
+    lateinit var auth: FirebaseAuth
+    lateinit var binding:ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
-        lateinit var auth: FirebaseAuth
-        var binding:ActivityMainBinding
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
