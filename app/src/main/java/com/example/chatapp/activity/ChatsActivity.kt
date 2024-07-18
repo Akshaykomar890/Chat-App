@@ -63,23 +63,25 @@ class ChatsActivity : AppCompatActivity() {
 
 
         binding.chatsSendButton.setOnClickListener {
-            if (binding.chatsInput.text!!.isEmpty()){
-                Toast.makeText(this,"Message sent",Toast.LENGTH_SHORT).show()
-            }
-                val message = MessageModel(binding.chatsInput.text.toString(),senderUid, Date().time)
-                val randomKey = database.reference.push().key
-                database.reference.child("chats")
-                    .child(senderRoom).child("messages")
-                    .child(randomKey!!).setValue(message).addOnCompleteListener{
-                        database.reference.child("chats").child(receiverRoom)
-                            .child("messages").child(randomKey).setValue(message).addOnCompleteListener {
-                                binding.chatsInput.text = null
+            if (binding.chatsInput.text!!.isEmpty()) {
+                Toast.makeText(this, "Enter Message", Toast.LENGTH_SHORT).show()
+            } else {
+            val message = MessageModel(binding.chatsInput.text.toString(), senderUid, Date().time)
+            val randomKey = database.reference.push().key
+            database.reference.child("chats")
+                .child(senderRoom).child("messages")
+                .child(randomKey!!).setValue(message).addOnCompleteListener {
+                    database.reference.child("chats").child(receiverRoom)
+                        .child("messages").child(randomKey).setValue(message)
+                        .addOnCompleteListener {
+                            binding.chatsInput.text = null
 
-                            }
-                    }
-                    .addOnFailureListener {
-                        Toast.makeText(this,"Message not  sent",Toast.LENGTH_SHORT).show()
-                    }
+                        }
+                }
+                .addOnFailureListener {
+                    Toast.makeText(this, "Message not  sent", Toast.LENGTH_SHORT).show()
+                }
+        }
         }
     }
 }

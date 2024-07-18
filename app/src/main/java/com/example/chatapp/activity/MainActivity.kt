@@ -6,9 +6,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.chatapp.R
 import com.example.chatapp.databinding.ActivityMainBinding
-import com.example.chatapp.fragments.CallFragment
+import com.example.chatapp.fragments.ProfileFragment
 import com.example.chatapp.fragments.ChatFragment
-import com.example.chatapp.fragments.StatusFragment
 import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity:AppCompatActivity(){
@@ -36,12 +35,8 @@ class MainActivity:AppCompatActivity(){
                     setFragment(ChatFragment())
                     true
                 }
-                R.id.statusMenue ->{
-                    setFragment(StatusFragment())
-                    true
-                }
                 R.id.callMenue ->{
-                    setFragment(CallFragment())
+                    setFragment(ProfileFragment())
                     true
                 }
 

@@ -7,13 +7,8 @@
         android:enabled="true"
         android:icon="@drawable/menue_chat_selector"/>
     <item
-        android:id="@+id/statusMenue"
-        android:title="Status"
-        android:enabled="true"
-        android:icon="@drawable/menue_status_selector"/>
-    <item
         android:id="@+id/callMenue"
-        android:title="Call"
+        android:title="Profile"
         android:enabled="true"
         android:icon="@drawable/menue_call_selector"/>
 </menu>
